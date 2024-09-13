@@ -2,7 +2,7 @@ import Button from "./Common/Button";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen text-white flex flex-col items-center justify-center text-center px-1 sm:px-4">
+    <section className="relative mt-36 text-white flex flex-col items-center justify-center text-center px-1 sm:px-4">
       {/* Top Small Text */}
       <p className="uppercase tracking-widest text-[10px] min-[400px]:text-xs px-4 mb-4  p-3 bg-white/20 rounded-full">
         <span className="text-white z-10">
