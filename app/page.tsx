@@ -1,13 +1,14 @@
 
-
+import Header from "@/components/Common/Header";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <>
-    <section className="py-24">
-    <h1 className="font-bold text-4xl text-center">Hello World</h1>
-  
-    </section>
+      <section className="h-full w-full bg-[url('/Box1.png')] bg-no-repeat bg-center bg-gray-900 p-3">
+        <Header />
+        <Hero />
+      </section>
     </>
   );
 }
