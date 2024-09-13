@@ -13,7 +13,7 @@ export default function Hero() {
 
       {/* Main Heading */}
       <h1 className="text-[32px] min-[400px]:text-[43px] sm:text-6xl leading-tight mb-4 font-extrabold">
-        <span className="bg-gradient-to-r text-[39px] min-[400px]:text-[43px]  font-extrabold sm:text-6xl from-[#38C682] to-[#00796D] text-transparent bg-clip-text">
+        <span className="bg-gradient-to-r from-[#38C682] to-[#00796D] text-transparent bg-clip-text text-[39px] min-[400px]:text-[43px]  font-extrabold sm:text-6xl ">
           Smart Choices
         </span>
         <br />
