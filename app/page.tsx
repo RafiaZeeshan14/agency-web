@@ -3,6 +3,7 @@ import Banner from "@/components/Banner";
 import Header from "@/components/Common/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import Work from "@/components/Work";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <section className="py-8">
         <Services />
         <Achievement />
+<Work/>
       </section>
     </>
   );
