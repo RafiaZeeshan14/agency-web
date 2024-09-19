@@ -1,6 +1,7 @@
 import Achievement from "@/components/Achievement";
 import Banner from "@/components/Banner";
 import Header from "@/components/Common/Header";
+import { CompaniesMarquee } from "@/components/Companies";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { ReviewCards } from "@/components/ReviewCards";
@@ -14,11 +15,14 @@ export default function Home() {
         <Header />
         <Hero />
         <Banner />
+    
       </section>
       <section className="">
         <Services />
-        <Achievement />
+        <CompaniesMarquee/>
         <Work />
+        <Achievement />
+       
         <ReviewCards/>
 
         <Footer/>
