@@ -81,11 +81,10 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
-     
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
 
-export default config
+export default config     
