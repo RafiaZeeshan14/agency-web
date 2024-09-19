@@ -1,5 +1,6 @@
 import React from "react";
 import Tab from "./Common/Tab";
+import CompanyList from "./Common/CompanyList";
 
 const Work = () => {
   return (
@@ -15,6 +16,8 @@ const Work = () => {
         <br /> other businesses elevate their brand and drive business growth.
       </p>
       <Tab />
+      <p className=" border-b-[1px] border-gray-600"/>
+      <CompanyList/>
     </div>
   );
 };

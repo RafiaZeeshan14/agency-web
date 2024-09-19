@@ -8,7 +8,7 @@ interface CardProps {
 }
 const Card: React.FC<CardProps> = ({ image, title, desc, link }) => {
   return (
-    <div className="max-w-sm  bg-[#111827] rounded-lg shadow-lg p-6 hover:bg-gray-800 cursor-pointer">
+    <div className="max-w-sm  bg-[#111827] rounded-3xl shadow-lg  p-6 hover:bg-gray-800 cursor-pointer">
       <div className="relative group">
         <img
           className="rounded-lg w-full h-auto"
