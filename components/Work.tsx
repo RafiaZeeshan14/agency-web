@@ -12,7 +12,7 @@ const Work = () => {
         </span>
       </h2>
       <p className="text-gray-200  text-md text-center">
-        Take a look at some of our recent projects and see how weve helped{" "}
+        Take a look at some of our recent projects and see how we&apos;ve helped{" "}
         <br /> other businesses elevate their brand and drive business growth.
       </p>
       <Tab />

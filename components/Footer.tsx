@@ -21,7 +21,7 @@ const Footer = () => {
             <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
           </div>
           <p className="text-gray-300 text-sm">
-            We're a team of experienced designers, developers, and marketers,
+            We&apos;re a team of experienced designers, developers, and marketers,
             passionate about delivering exceptional digital solutions.
           </p>
           <a
@@ -38,7 +38,7 @@ const Footer = () => {
             <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
           </div>
           <p className="text-gray-300 text-sm">
-            We're a team of experienced designers, developers, and marketers,
+          We&apos;re a team of experienced designers, developers, and marketers,
             passionate about delivering exceptional digital solutions.
           </p>
           <a
