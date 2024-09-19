@@ -11,7 +11,7 @@ const Tab = () => {
   const renderCards = () => {
     if (activeTab === 'UI/UX Design') {
       return (
-        <div className=" flex justify-center gap-10">
+        <div className=" flex flex-col sm:flex-row justify-center items-center sm:items-baseline gap-10">
           <Card
             image="/CardImg1.png"
             title="UI/UX Card 1"
@@ -28,7 +28,7 @@ const Tab = () => {
       );
     } else if (activeTab === 'Digital Marketing') {
       return (
-        <div className="flex justify-center gap-10">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
           <Card
             image="/CardImg1.png"
             title="Marketing Card 1"
@@ -45,7 +45,7 @@ const Tab = () => {
       );
     } else if (activeTab === 'Management') {
         return (
-          <div className="flex justify-center gap-10">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
             <Card
               image="/CardImg1.png"
               title="Management Card 1"
@@ -62,7 +62,7 @@ const Tab = () => {
         );
       }else if (activeTab === 'Development') {
         return (
-          <div className="flex justify-center gap-10">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
             <Card
               image="/CardImg1.png"
               title="Development Card 1"
@@ -85,12 +85,12 @@ const Tab = () => {
     <div>
       {/* Tab selection */}
       <div className="py-6 flex justify-center">
-        <div className="flex gap-10 bg-gray-50 rounded-full py-1.5 pl-1 pr-5 text-sm justify-center items-center mx-auto">
+        <div className="flex sm:gap-10 gap-1  bg-gray-50 rounded-full py-1 sm:py-1.5 pl-1 sm:pr-5 pr-2 text-[10px] sm:text-sm justify-center items-center mx-auto">
           {tabs.map((tab) => (
             <p
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`p-3 rounded-full cursor-pointer transition-all duration-300 ease-in-out ${
+              className={`sm:p-3 p-1 rounded-full cursor-pointer transition-all duration-300 ease-in-out ${
                 activeTab === tab
                   ? 'bg-gradient-to-r from-[#38C682] to-[#00796D] text-white'
                   : 'text-black'

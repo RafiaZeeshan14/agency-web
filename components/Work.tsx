@@ -4,7 +4,7 @@ import CompanyList from "./Common/CompanyList";
 
 const Work = () => {
   return (
-    <div className=" bg-[url('/Work.png')] bg-no-repeat p-2  bg-cover bg-center">
+    <div className=" bg-no-repeat bg-center p-1 w-full rounded  bg-cover md:p-4 bg-[url('/MobileBg.png')]  sm:bg-[url('/Work.png')]">
       <h2 className="text-5xl font-bold mb-6 text-center text-white mt-24">
         Our Projects Have Been{" "}
         <span className="bg-gradient-to-r from-[#38C682] to-[#00796D] text-transparent bg-clip-text">
