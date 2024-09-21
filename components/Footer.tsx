@@ -15,10 +15,9 @@ const Footer = () => {
       </div>
       <p className="border-t border-gray-700 mb-12" />
       {/* Footer Links Section */}
-       {/* Left Section */}
        <div className="space-y-4 sm:hidden">
           <div className="flex items-center space-x-2">
-            <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
+            <img src="/Logo.png" alt="Logo" className="h-8 w-auto" />
           </div>
           <p className="text-gray-300 text-sm">
             We&apos;re a team of experienced designers, developers, and marketers,
