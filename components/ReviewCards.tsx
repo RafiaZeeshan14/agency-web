@@ -45,7 +45,7 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        "relative h-40 w-36 sm:w-96 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative h-40 w-38 sm:w-96 cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -61,7 +61,7 @@ const ReviewCard = ({
           <p className="text-xs font-medium dark:text-white/40">{username}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <blockquote className="mt-1 md:mt-2 text-sm mb-3 md:mb-0 ">{body}</blockquote>
     </figure>
   );
 };
