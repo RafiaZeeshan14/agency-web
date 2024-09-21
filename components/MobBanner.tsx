@@ -1,7 +1,7 @@
 "use client";
+import { SetStateAction, useState } from "react";
 
 export default function MobBanner() {
-
   const icons = [
     {
       imgSrc: "/expand.png",
@@ -18,33 +18,57 @@ export default function MobBanner() {
     {
       imgSrc: "/client.png",
       text: "Attract Client",
-    }
+    },
   ];
 
-  
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToSlide = (index: SetStateAction<number>) => {
+    setCurrentIndex(index);
+  };
+
   return (
-    <div>
-      {/* Card Container */}
-      <div className="relative h-screen bg-no-repeat bg-center p-4 bg-[url('/MobBanner.png')]">
-        {/* Content */}
-        <div className="flex flex-col items-center justify-center h-full space-y-8">
-          <p className="text-center font-semibold text-gray-800">Benefits of improving your business</p>
+    <div className="text-white relative min-h-[80vh] bg-no-repeat bg-center p-4 bg-[url('/MobBanner.png')] sm:hidden flex flex-col items-center justify-center text-center">
+      {/* Header Text */}
+      <h1 className="text-xl font-medium mb-5 ">
+        Benefits of improving <br/> your Business
+      </h1>
 
-          <div className="w-full overflow-hidden relative">
+      {/* Slider Container */}
+      <div className="w-full overflow-hidden">
+        <div
+          className="flex transition-transform duration-700 ease-in-out"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`,
+          }}
+        >
+          {icons.map((icon, index) => (
             <div
-              className="flex transition-transform duration-700 ease-in-out"
+              key={index}
+              className="flex-shrink-0 w-full flex flex-col items-center justify-center space-y-4"
             >
-              {icons.map((icon, index) => (
-                <div key={index} className="flex-shrink-0 w-full flex flex-col items-center justify-center">
-                  <img src={icon.imgSrc} alt={icon.text} className="w-[75px] h-[75px] mb-2" />
-                  <p>{icon.text}</p>
-                </div>
-              ))}
+              <img
+                src={icon.imgSrc}
+                alt={icon.text}
+                className="w-[90px] h-[90px] mb-5 my-10"
+              />
+              <p className="text-lg font-medium">{icon.text}</p>
             </div>
-          </div>
-
-         
+          ))}
         </div>
+      </div>
+
+      {/* Navigation Dots */}
+      <div className="flex space-x-2 mt-6">
+        {icons.map((_, index) => (
+          <div
+            key={index}
+            className={`h-2 w-2 rounded-full ${
+              currentIndex === index ? "bg-gray-800" : "bg-gray-400"
+            } cursor-pointer`}
+            onClick={() => goToSlide(index)}
+          ></div>
+        ))}
       </div>
     </div>
   );

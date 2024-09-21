@@ -10,7 +10,7 @@ export default function Header() {
   };
 
   return (
-    <nav className=" px-4 py-2 flex justify-between items-center ">
+    <nav className=" flex justify-between items-center p-4">
       {/* Logo */}
       <div className="">
         <img src="/Logo.png" alt="Logo" className="" />

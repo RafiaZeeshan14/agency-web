@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
   return (
-    <div className="text-white relative bg-[url('/banner.png')] bg-no-repeat min-h-[70vh]  bg-center flex flex-col items-center justify-center">
+    <div className="text-white relative bg-[url('/banner.png')] bg-no-repeat min-h-[70vh] hidden  bg-center sm:flex flex-col items-center justify-center">
         <h1 className='text-3xl font-semibold mb-16'>
           Benefits of improving your Business
         </h1>
