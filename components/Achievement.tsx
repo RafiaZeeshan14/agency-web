@@ -5,7 +5,7 @@ const Achievement = () => {
   return (
     <div id="reviews" className=" bg-no-repeat bg-center p-1 w-full rounded-2xl  bg-cover md:p-4 bg-[url('/MobileAc.png')]  sm:bg-[url('/Achievement.png')]">
       <div className="flex flex-col py-6">
-        <h1 className="md:text-3xl sm:text-2xl text-xl font-medium text-center mb-8 px-2">
+        <h1 className="md:text-3xl sm:text-2xl text-xl font-medium text-center mb-8 px-2 font-serif ">
           We are passionate about helping businesses grow and succeed in the
           digital age. <br /> We take pride in our work and strive to exceed{" "}
           <br /> your expectations every time.

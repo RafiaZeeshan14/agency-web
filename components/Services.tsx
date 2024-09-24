@@ -8,29 +8,29 @@ const servicesData = [
     id: 1,
     title: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Nibh luctus nisi ac eu.",
-    image: "/UX.png",
+      "Design experiences that delight and engage. Transforming ideas into seamless digital journeys with intuitive UI/UX. 💡",
+    image: "/Ui.jpg",
   },
   {
     id: 2,
     title: "Digital Marketing",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Nibh luctus nisi ac eu.",
-    image: "/digital.png",
+      "Unlock your brands potential with cutting-edge digital marketing strategies. Lets boost your online presence, engage your audience, and drive real results. 🚀",
+    image: "/market.jpg",
   },
   {
     id: 3,
     title: "Social Media Management",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Nibh luctus nisi ac eu.",
-    image: "/social.webp",
+      "Elevate your brand with strategic social media management. From content creation to community engagement, we help you connect, grow, and thrive online. 📲",
+    image: "/media.jpg",
   },
   {
     id: 4,
     title: "Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Nibh luctus nisi ac eu.",
-    image: "/webdev.jpg",
+      "Turning ideas into reality with innovative development solutions. From web to mobile, we build experiences that drive growth and success. 💻",
+    image: "/dev.jpg",
   },
 ];
 
@@ -94,7 +94,7 @@ export default function Services() {
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-auto rounded-lg shadow-md"
+                className="w-full h-auto rounded-lg shadow-md object-cover"
               />
             </div>
           </div>

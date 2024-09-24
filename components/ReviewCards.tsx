@@ -5,25 +5,25 @@ const reviews = [
   {
     name: "Clara Insomnia",
     username: "Occupation",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam diam sagittis sagittis ullamcorper..",
+    body: " ⭐⭐⭐ Absolutely fantastic service! The team went above and beyond to meet our needs. The project was delivered on time, and the quality exceeded our expectations. Highly recommend!",
     img: "/Avatar.png",
   },
   {
     name: "John Doe",
     username: "Earth Founder",
-    body: "Lorem ipsum dolor sit amet,  adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam.",
+    body: "⭐⭐⭐⭐ Great product with an intuitive design. Customer support was responsive and resolved my issues quickly. Minor improvements could be made, but overall a positive experience.",
     img: "/Avatar3.png",
   },
   {
     name: "Alan Runner",
     username: "Developer",
-    body: " amet, consectetur adipiscing elit. aliquam diam sagittis sagittis ullamcorper.  consectetur adipiscing elit. aliquam.",
+    body: " ⭐⭐⭐⭐⭐ I couldn't be happier with the results! Everything was done professionally and ahead of schedule. This is the go-to team for anyone looking for high-quality work",
     img: "/Avatar2.png",
   },
   {
     name: "Lil Nas",
     username: "Marketing",
-    body: " aliquam diam sagittis sagittis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam.",
+    body: "⭐⭐  Overall, Im satisfied with the service. There were some minor hiccups along the way, but the end product works well, and I appreciate the team’s effort.",
     img: "/Avatar4.png",
   },
 ];
