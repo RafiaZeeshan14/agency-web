@@ -4,14 +4,14 @@ import React, { useState } from 'react';
 import Card from './Card';
 
 const MobTab = () => {
-  const [activeTab, setActiveTab] = useState('UI/UX Design'); 
+  const [activeMobTab, setActiveMobTab] = useState('UI/UX'); 
 
-  const tabs = [' UI/UX', ' Digital', 'SMM', 'Dev'];
+  const Mobtabs = ['UI/UX', 'Digital', 'SMM', 'Dev'];
 
-  const renderCards = () => {
-    if (activeTab === ' UI/UX') {
+  const renderMobCards = () => {
+    if (activeMobTab === 'UI/UX') {
       return (
-        <div className=" flex flex-col sm:flex-row justify-center items-center sm:items-baseline gap-10">
+        <div className=" flex flex-col justify-center items-center gap-10">
           <Card
             image="/CardImg1.png"
             title="UI/UX Card 1"
@@ -26,9 +26,9 @@ const MobTab = () => {
           />
         </div>
       );
-    } else if (activeTab === ' Digital') {
+    } else if (activeMobTab === 'Digital') {
       return (
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
+        <div className="flex flex-col justify-center items-center gap-10">
           <Card
             image="/CardImg2.png"
             title="Digital Card 1"
@@ -43,9 +43,9 @@ const MobTab = () => {
           />
         </div>
       );
-    } else if (activeTab === 'SMM') {
+    } else if (activeMobTab === 'SMM') {
         return (
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
+          <div className="flex flex-col justify-center items-center gap-10">
             <Card
               image="/CardImg1.png"
               title="Management Card 1"
@@ -60,9 +60,9 @@ const MobTab = () => {
             />
           </div>
         );
-      }else if (activeTab === 'Dev') {
+      }else if (activeMobTab === 'Dev') {
         return (
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
+          <div className="flex flex-col justify-center items-center gap-10">
             <Card
               image="/CardImg2.png"
               title="Development Card 1"
@@ -85,25 +85,25 @@ const MobTab = () => {
     <div>
       {/* Tab selection */}
       <div className="py-6 flex justify-center sm:hidden">
-        <div className="flex sm:gap-10 gap-8 bg-gray-50 rounded-full py-2  px-5 text-sm justify-center items-center mx-auto">
-          {tabs.map((tab) => (
+        <div className="flex gap-8 bg-gray-50 rounded-full py-2  px-5 text-sm justify-center items-center mx-auto">
+          {Mobtabs.map((tabs) => (
             <p
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`sm:p-3 p-1 rounded-full cursor-pointer transition-all duration-300 ease-in-out ${
-                activeTab === tab
+              key={tabs}
+              onClick={() => setActiveMobTab(tabs)}
+              className={` p-1 rounded-full cursor-pointer transition-all duration-300 ease-in-out ${
+                activeMobTab === tabs
                   ? 'bg-gradient-to-r from-[#38C682] to-[#00796D] text-white px-2'
                   : 'text-black'
               }`}
             >
-              {tab}
+              {tabs}
             </p>
           ))}
         </div>
       </div>
 
       <div className="mt-6 mb-12 sm:hidden">
-        {renderCards()}
+        {renderMobCards()}
       </div>
     </div>
   );

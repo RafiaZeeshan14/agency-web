@@ -7,7 +7,7 @@ import WordFadeIn from "./magicui/word-fade-in";
 
 export default function Hero() {
   return (
-    <section className="relative mt-36 text-white flex flex-col items-center justify-center text-center px-2 sm:px-4">
+    <section className="relative mt-36 text-white flex flex-col items-center justify-center text-center px-3 sm:px-4">
       {/* Top Small Text */}
       <div className="uppercase px-4 mb-4 p-3 bg-white/20 rounded-full">
         <span className="text-white z-10">
@@ -21,7 +21,7 @@ export default function Hero() {
 
       <span className=" mb-4 font-extrabold">
         <GradualSpacing
-          className="text-center font-extrabold  text-white text-[42px]  sm:text-6xl md:text-7xl tracking-[-0.05em] bg-gradient-to-r from-[#38C682] to-[#00796D] text-transparent bg-clip-text overflow-visible"
+          className="text-center font-extrabold  text-white text-[48px]/[45px]   sm:text-6xl md:text-7xl tracking-[-0.05em] bg-gradient-to-r from-[#38C682] to-[#00796D] text-transparent bg-clip-text overflow-visible"
           text="Smart Choices"
         />
         {/* <TypingAnimation text="Smart Choices"/> */}

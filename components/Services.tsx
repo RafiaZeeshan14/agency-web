@@ -47,16 +47,13 @@ export default function Services() {
 
   return (
     <div className="w-full max-w-3xl sm:max-w-5xl p-4 mx-auto">
-      {/* <h2 className="text-5xl font-extrabold mb-8 text-center py-4 tracking-tight">
-        The Services We Offer{" "}
-        <span className="bg-gradient-to-r from-[#38C682] to-[#00796D] text-transparent bg-clip-text">
-          For You
+      <span className=" flex justify-center  flex-col sm:flex-row mb-8 sm:gap-4 py-4 tracking-tight">
+        <LetterPullup words={"The Services We Offer"} delay={0.05} className="hidden sm:flex"/>
+        <span className="sm:hidden">
+
+        <LetterPullup words={"The Services "} delay={0.05} />
+        <LetterPullup words={" We Offer"} delay={0.05} />
         </span>
-      </h2> */}
-
-      <span className=" flex justify-center flex-col sm:flex-row mb-8 sm:gap-4 py-4 tracking-tight">
-        <LetterPullup words={"The Services We Offer"} delay={0.05} className=""/>
-
         <LetterPullup
           words={"For You"}
           delay={0.08}

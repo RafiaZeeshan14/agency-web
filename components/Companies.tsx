@@ -69,7 +69,7 @@ export function CompaniesMarquee() {
             <br /> around the world.
           </h2>
         </div>
-        <p className="text-white text-sm px-2 sm:px-0 py-1">
+        <p className="text-white text-center md:text-left text-sm px-2 sm:px-0 py-1">
         Over 200 trusted companies choose us for our exceptional services. <br/>
          Join the growing list of satisfied clients  <br/>
         Discover why we are the preferred partner for businesses seeking innovative solutions and outstanding results.
