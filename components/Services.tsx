@@ -46,7 +46,7 @@ export default function Services() {
 
   return (
     <div className="w-full max-w-3xl sm:max-w-5xl p-4 mx-auto">
-      <h2 className="text-4xl font-extrabold mb-8 text-center">
+      <h2 className="text-5xl font-extrabold mb-8 text-center py-4 tracking-tight">
         The Services We Offer{" "}
         <span className="bg-gradient-to-r from-[#38C682] to-[#00796D] text-transparent bg-clip-text">
           For You

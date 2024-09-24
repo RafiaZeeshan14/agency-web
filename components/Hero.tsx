@@ -9,18 +9,19 @@ export default function Hero() {
   return (
     <section className="relative mt-36 text-white flex flex-col items-center justify-center text-center px-2 sm:px-4">
       {/* Top Small Text */}
-      <p className="uppercase tracking-widest text-[10px] min-[400px]:text-xs px-4 mb-4  p-3 bg-white/20 rounded-full">
+      <div className="uppercase px-4 mb-4 p-3 bg-white/20 rounded-full">
         <span className="text-white z-10">
-          {" "}
-          Number One Creative Digital Agency
+          <WordFadeIn className="tracking-widest text-[10px] min-[400px]:text-xs"
+          words=" Number One Creative Digital Agency"
+        />
         </span>
-      </p>
+      </div>
 
       {/* Main Heading */}
 
-      <span className="text-[32px] min-[400px]:text-[43px] sm:text-6xl leading-tight mb-4 font-extrabold">
+      <span className=" mb-4 font-extrabold">
         <GradualSpacing
-          className="text-center font-extrabold text-white text-[35px] min-[400px]:text-[36px] sm:text-6xl md:text-7xl tracking-[-0.02em] bg-gradient-to-r from-[#38C682] to-[#00796D] text-transparent bg-clip-text overflow-visible"
+          className="text-center font-extrabold  text-white text-[42px]  sm:text-6xl md:text-7xl tracking-[-0.05em] bg-gradient-to-r from-[#38C682] to-[#00796D] text-transparent bg-clip-text overflow-visible"
           text="Smart Choices"
         />
         {/* <TypingAnimation text="Smart Choices"/> */}
