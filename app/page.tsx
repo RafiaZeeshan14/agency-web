@@ -16,17 +16,17 @@ export default function Home() {
         <Header />
         <Hero />
         <Banner />
-    <MobBanner/>
+        <MobBanner />
       </section>
       <section className="">
         <Services />
-        <CompaniesMarquee/>
+        <CompaniesMarquee />
         <Work />
         <Achievement />
-       
-        <ReviewCards/>
 
-        <Footer/>
+        <ReviewCards />
+
+        <Footer />
       </section>
     </>
   );
