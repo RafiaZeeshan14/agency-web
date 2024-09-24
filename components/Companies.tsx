@@ -47,7 +47,7 @@ const ReviewCard = ({ img }: { img: string }) => {
   return (
     <figure
       className={cn(
-        "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-3 sm:p-4",
         // Dark styles
         "border-gray-50/[.1] bg-gray-50/[.10] hover:bg-gray-50/[.15]"
       )}
@@ -69,13 +69,10 @@ export function CompaniesMarquee() {
             <br /> around the world.
           </h2>
         </div>
-        <p className="text-white text-sm">
-          Vulputate molestie molestie amet leo blandit accumsan.
-          <br />
-          Sapien sed amet tellus purus sit odio eget.
-          <br />
-          Diam morbi faucibus vitae neque id in. Nullam sed et dapibus nunc,
-          porta enim orci urna, sit. Lectus ac.
+        <p className="text-white text-sm px-2 sm:px-0 py-1">
+        Over 200 trusted companies choose us for our exceptional services. <br/>
+         Join the growing list of satisfied clients  <br/>
+        Discover why we are the preferred partner for businesses seeking innovative solutions and outstanding results.
         </p>
       </div>
 

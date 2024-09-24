@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import LetterPullup from "./magicui/letter-pullup";
 
 const servicesData = [
   {
@@ -46,12 +47,22 @@ export default function Services() {
 
   return (
     <div className="w-full max-w-3xl sm:max-w-5xl p-4 mx-auto">
-      <h2 className="text-5xl font-extrabold mb-8 text-center py-4 tracking-tight">
+      {/* <h2 className="text-5xl font-extrabold mb-8 text-center py-4 tracking-tight">
         The Services We Offer{" "}
         <span className="bg-gradient-to-r from-[#38C682] to-[#00796D] text-transparent bg-clip-text">
           For You
         </span>
-      </h2>
+      </h2> */}
+
+      <span className=" flex justify-center flex-col sm:flex-row mb-8 sm:gap-4 py-4 tracking-tight">
+        <LetterPullup words={"The Services We Offer"} delay={0.05} className=""/>
+
+        <LetterPullup
+          words={"For You"}
+          delay={0.08}
+          className="bg-gradient-to-r from-[#38C682] to-[#00796D] text-transparent bg-clip-text "
+        />
+      </span>
 
       {servicesData.map((service, index) => (
         <div key={service.id} className="border-b-2 mb-6 pb-4">
@@ -76,7 +87,7 @@ export default function Services() {
 
           <div
             style={{
-              maxHeight: activeIndex === index ? '500px' : '0', 
+              maxHeight: activeIndex === index ? "500px" : "0",
               opacity: activeIndex === index ? 1 : 0,
             }}
             className={`transition-all duration-300 ease-in-out overflow-hidden`}

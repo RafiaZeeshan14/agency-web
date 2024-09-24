@@ -27,7 +27,7 @@ export default function Hero() {
         {/* <TypingAnimation text="Smart Choices"/> */}
         <BlurIn word="For Your Business Growth" />
       </span>
-      <span className="sm:text-lg max-w-2xl mb-8 text-sm  ">
+      <span className="sm:text-lg max-w-2xl mb-8 text-sm  px-1">
         <WordFadeIn
           words=" Were a team of experienced designers, developers, and marketers,
         passionate about delivering exceptional digital solutions."
