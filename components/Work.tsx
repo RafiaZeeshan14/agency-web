@@ -5,7 +5,7 @@ import MobTab from "./Common/MobTab";
 
 const Work = () => {
   return (
-    <div className=" bg-no-repeat bg-center p-1 w-full rounded  bg-cover md:p-4 bg-[url('/MobileBg.png')]  sm:bg-[url('/Work.png')]">
+    <div id="work"className=" bg-no-repeat bg-center p-1 w-full rounded  bg-cover md:p-4 bg-[url('/MobileBg.png')]  sm:bg-[url('/Work.png')]">
       <h2 className="text-5xl sm:text-6xl font-bold mb-6 text-center text-white mt-24">
         Our Projects Have Been{" "}
         <span className="bg-gradient-to-r from-[#38C682] to-[#00796D] text-transparent bg-clip-text">

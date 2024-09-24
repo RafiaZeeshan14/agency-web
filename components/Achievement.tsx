@@ -3,7 +3,7 @@ import NumberTicker from "./magicui/number-ticker";
 
 const Achievement = () => {
   return (
-    <div className=" bg-no-repeat bg-center p-1 w-full rounded-2xl  bg-cover md:p-4 bg-[url('/MobileAc.png')]  sm:bg-[url('/Achievement.png')]">
+    <div id="reviews" className=" bg-no-repeat bg-center p-1 w-full rounded-2xl  bg-cover md:p-4 bg-[url('/MobileAc.png')]  sm:bg-[url('/Achievement.png')]">
       <div className="flex flex-col py-6">
         <h1 className="md:text-3xl sm:text-2xl text-xl font-medium text-center mb-8 px-2">
           We are passionate about helping businesses grow and succeed in the

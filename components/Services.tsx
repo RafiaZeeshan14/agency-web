@@ -46,7 +46,7 @@ export default function Services() {
   };
 
   return (
-    <div className="w-full max-w-3xl sm:max-w-5xl p-4 mx-auto">
+    <div id="services" className="w-full max-w-3xl sm:max-w-5xl p-4 mx-auto">
       <span className=" flex justify-center  flex-col sm:flex-row mb-8 sm:gap-4 py-4 tracking-tight">
         <LetterPullup words={"The Services We Offer"} delay={0.05} className="hidden sm:flex"/>
         <span className="sm:hidden">

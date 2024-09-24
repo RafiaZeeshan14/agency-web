@@ -2,6 +2,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -17,6 +18,8 @@ export default function LetterPullup({
   delay,
 }: LetterPullupProps) {
   const letters = words.split("");
+  const [isInView, setIsInView] = useState(false);
+  const ref = useRef<HTMLDivElement | null>(null);
 
   const pullupVariant = {
     initial: { y: 100, opacity: 0 },
@@ -29,17 +32,40 @@ export default function LetterPullup({
     }),
   };
 
+  // Intersection Observer to trigger animation on scroll
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.disconnect(); // Stop observing after it comes into view
+        }
+      },
+      { threshold: 0.1 } // Trigger when at least 10% of the component is in view
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current); // Cleanup on component unmount
+      }
+    };
+  }, []);
+
   return (
-    <div className="flex justify-center">
+    <div ref={ref} className="flex justify-center">
       {letters.map((letter, i) => (
         <motion.h1
           key={i}
           variants={pullupVariant}
           initial="initial"
-          animate="animate"
+          animate={isInView ? "animate" : "initial"} // Animate only when in view
           custom={i}
           className={cn(
-            "font-display text-center text-5xl sm:text-4xl md:text-5xl font-extrabold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white  md:leading-[5rem]",
+            "font-display text-center text-5xl sm:text-4xl md:text-5xl lg:text-[55px]/[43px] font-extrabold tracking-[-0.04em] text-black drop-shadow-sm dark:text-white md:leading-[5rem]",
             className,
           )}
         >
