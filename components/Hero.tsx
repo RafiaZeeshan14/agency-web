@@ -8,23 +8,21 @@ import WordFadeIn from "./magicui/word-fade-in";
 export default function Hero() {
   return (
     <section className="relative mt-36 text-white flex flex-col items-center justify-center text-center px-3 sm:px-4">
-      {/* Top Small Text */}
       <div className="uppercase px-4 mb-4 p-3 bg-white/20 rounded-full">
         <span className="text-white z-10">
-          <WordFadeIn className="tracking-widest text-[10px] min-[400px]:text-xs"
-          words=" Number One Creative Digital Agency"
-        />
+          <WordFadeIn
+            className="tracking-widest text-[10px] min-[400px]:text-xs"
+            words=" Number One Creative Digital Agency"
+          />
         </span>
       </div>
 
       {/* Main Heading */}
-
       <span className=" mb-4 font-extrabold">
         <GradualSpacing
-          className="text-center font-extrabold  text-white text-[48px]/[45px]   sm:text-6xl md:text-7xl tracking-[-0.05em] bg-gradient-to-r from-[#38C682] to-[#00796D] text-transparent bg-clip-text overflow-visible"
+          className="text-center font-extrabold  text-white text-[48px]/[45px] sm:text-6xl md:text-7xl tracking-[-0.05em] bg-gradient-to-r from-[#38C682] to-[#00796D] text-transparent bg-clip-text overflow-visible"
           text="Smart Choices"
         />
-        {/* <TypingAnimation text="Smart Choices"/> */}
         <BlurIn word="For Your Business Growth" />
       </span>
       <span className="sm:text-lg max-w-2xl mb-8 text-sm  px-1">

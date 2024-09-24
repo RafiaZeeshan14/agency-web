@@ -23,9 +23,7 @@ export default function Home() {
         <CompaniesMarquee />
         <Work />
         <Achievement />
-
         <ReviewCards />
-
         <Footer />
       </section>
     </>
