@@ -5,25 +5,25 @@ const reviews = [
   {
     name: "Clara Insomnia",
     username: "Occupation",
-    body: " ⭐⭐⭐ Absolutely fantastic service! The team went above and beyond to meet our needs. The project was delivered on time, and the quality exceeded our expectations. Highly recommend!",
+    body: " ⭐⭐⭐ Absolutely fantastic service! The team went above and beyond to meet our needs. The project was delivered on time. Highly recommend!",
     img: "/Avatar.png",
   },
   {
     name: "John Doe",
     username: "Earth Founder",
-    body: "⭐⭐⭐⭐ Great product with an intuitive design. Customer support was responsive and resolved my issues quickly. Minor improvements could be made, but overall a positive experience.",
+    body: "⭐⭐⭐⭐ Great product with an intuitive design. Customer support was responsive and resolved my issues quickly.Overall a positive experience.",
     img: "/Avatar3.png",
   },
   {
     name: "Alan Runner",
     username: "Developer",
-    body: " ⭐⭐⭐⭐⭐ I couldn't be happier with the results! Everything was done professionally and ahead of schedule. This is the go-to team for anyone looking for high-quality work",
+    body: " ⭐⭐⭐⭐⭐ I couldn't be happier with the results! Everything was done professionally. This is the go-to team for anyone looking for high-quality work",
     img: "/Avatar2.png",
   },
   {
     name: "Lil Nas",
     username: "Marketing",
-    body: "⭐⭐  Overall, Im satisfied with the service. There were some minor hiccups along the way, but the end product works well, and I appreciate the team’s effort.",
+    body: "⭐⭐  Overall, Im satisfied with the service. There were some minor hiccups along the way, but the end product works well, and I appreciate the teams effort.",
     img: "/Avatar4.png",
   },
 ];
@@ -45,7 +45,7 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        "relative h-40 w-38 sm:w-96 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative h-44 sm:h-40 w-40 sm:w-96 cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -61,7 +61,7 @@ const ReviewCard = ({
           <p className="text-xs font-medium dark:text-white/40">{username}</p>
         </div>
       </div>
-      <blockquote className="mt-1 md:mt-2 text-sm mb-3 md:mb-0 ">{body}</blockquote>
+      <blockquote className="mt-1 md:mt-2 text-xs sm:text-sm mb-3 md:mb-0 ">{body}</blockquote>
     </figure>
   );
 };
